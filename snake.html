@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Platform</title>
+    <title>Modern Snake Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,34 +12,21 @@
             <div class="score">Score: <span id="score">0</span></div>
             <div class="high-score">High Score: <span id="highScore">0</span></div>
         </div>
-        <div class="game-timer" style="color: white;">
-        </div>
         <canvas id="gameCanvas"></canvas>
         <div class="controls-container">
             <button id="startBtn">Start Game</button>
             <button id="resetBtn">Reset</button>
+            <button id="homeBtn" onclick="location.href='index.html'">Home</button>
         </div>
         <div class="mobile-controls">
             <button id="upBtn">↑</button>
             <div class="horizontal-controls">
                 <button id="leftBtn">←</button>
                 <button id="rightBtn">→</button>
-    <div class="home-container">
-        <header>
-            <h1>Game Platform</h1>
-            <p>Choose a game to play</p>
-        </header>
-        
-        <div class="games-grid">
-            <div class="game-card" onclick="location.href='snake.html'">
-                <div class="game-info">
-                    <h3>Snake Game</h3>
-                    <p>Classic snake game with modern visuals</p>
-                </div>
             </div>
-            
-            <!-- More games can be added here -->
+            <button id="downBtn">↓</button>
         </div>
     </div>
+    <script src="game.js"></script>
 </body>
 </html> 
